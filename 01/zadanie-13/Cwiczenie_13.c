@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int n, i;
-    float liczba, suma = 0, srednia;
+    int a, i;
+    float liczba, suma, srednia;
 
     printf("Podaj ile liczbe: ");
-    scanf("%d", &n);
+    scanf("%d", &a);
 
-    for (i = 1; i <= n; i++) {
+    for (i = 1; i <= a; i++) {
         printf("Podaj liczbe %d: ", i);
         scanf("%f", &liczba);
         suma = suma + liczba;
     }
 
-    srednia = suma / n;
+    srednia = suma / a;
 
     printf("Suma = %.2f\n", suma);
     printf("Srednia = %.2f\n", srednia);
